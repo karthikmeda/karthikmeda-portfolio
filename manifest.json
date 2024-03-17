@@ -9,13 +9,13 @@
     },
     {
       "src": "favicon.png",
-      "type": "image/png",
-      "sizes": "64x64"
+      "sizes": "64x64",
+      "type": "image/png"
     },
     {
       "src": "favicon512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "start_url": ".",
