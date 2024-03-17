@@ -1,117 +1,69 @@
-import React, { useContext, useRef } from 'react';
-
-import Slider from 'react-slick';
-
-import { FaQuoteLeft, FaArrowRight, FaArrowLeft } from 'react-icons/fa';
+import React, { useContext } from 'react';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
-import { testimonialsData } from '../../data/testimonialsData';
-
+import one from '../../assets/jpeg/coding ninjas word cup.jpg'
 import './Testimonials.css';
 
 function Testimonials() {
     const { theme } = useContext(ThemeContext);
-    const sliderRef = useRef();
 
-    const settings = {
-        dots: true,
-        adaptiveHeight: true,
-        infinite: true,
-        speed: 800,
-        arrows: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        margin: 3,
-        loop: true,
-        autoplaySpeed: 3000,
-        draggable: true,
-        swipeToSlide: true,
-        swipe: true,
-    };
-
-    const gotoNext = () => {
-        sliderRef.current.slickNext();
-    };
-
-    const gotoPrev = () => {
-        sliderRef.current.slickPrev();
-    };
+    // Define achievements data directly within the component
+    const achievementsData = [
+        {
+            id: 1,
+            title: 'Coding Ninjas World Cup Challenge',
+            description: 'Achieved 158th position out of 5000 participants in the prestigious Coding World Cup powered by Logitech, hosted by Coding Ninjas. Demonstrated strong coding skills and problem-solving abilities in a competitive coding challenge, showcasing dedication and expertise in the field.',
+            image: one,
+            url: 'https://ampsp.webengage.co/f/a/j0gAogsBxy4xEmTv2jSzsw~~/AAQNhwA~/RgRnSzkIP4QOAmh0dHBzOi8vYy53ZWJlbmdhZ2UuY29tL2x3L2cxLmpwZz9wPWV5SnNZeUk2SW40ME4ySTJOakEyTkNJc0ltd2lPaUpoT0RZME0yWmlOR0l3WTJJNE1URmtZVGMyTjJFMU1qQmhaR1l6WldZd05UVmxNV1UzWkdJMklpd2lZeUk2SWpFM09UYzJNVElpTENKbGJTSTZJbTFyWVhKMGFHbHJiV1ZrWVVCbmJXRnBiQzVqYjIwaUxDSmxJam9pZm5Ga00ySm9NU0lzSW5ZaU9pSiUyQk5tNXJOVFpvTmlJc0luTWlPaUprWmpneU5ESTFZaTB3WXpKakxUUm1aRFF0WVdRNFpTMWhOak5sWlRGbFlXVmlNV0VpTENKcUlqb2lmalk0WlRVMk1HVWlMQ0psZG1WdWRDSTZJbVZ0WVdsc1gyTnNhV05ySWl3aVkzUmhJam9pZmpoaE1qSTJOVEl4SWl3aWRHOVZVa3dpT2lKb2RIUndjem92TDI1cGJtcGhjMlpwYkdWekxuTXpMbUZ0WVhwdmJtRjNjeTVqYjIwdlkyVnlkR2xtYVdOaGRHVmZiMlpmWlhabGJuUmZZMjlrYVc1blgzZHZjbXhrWDJOMWNGOXdiM2RsY21Wa1gySjVYMnh2WjJsMFpXTm9YMk5oWVRabFl6azJPVEppTTJRMFlqVmhNamMyTG5Ca1ppSjlXA3NwY0IKZV8ItGhlYJ-8elIWbWthcnRoaWttZWRhQGdtYWlsLmNvbVgEAAACQQ~~', // Add URL for each achievement
+            
+        },
+        // {
+        //     id: 2,
+        //     title: 'Achievement 2',
+        //     description: 'Description for Achievement 2',
+        //     image: one,
+        //     url: 'https://example.com/achievement2', // Add URL for each achievement
+        // },
+        // Add more achievements as needed
+    ];
 
     return (
         <>
-            {testimonialsData.length > 0 && (
+            {achievementsData.length > 0 && (
                 <div
                     className='testimonials'
                     style={{ backgroundColor: theme.primary }}
                 >
                     <div className='testimonials--header'>
-                        <h1 style={{ color: theme.secondary }}>Testimonials</h1>
+                        <h1 style={{ color: theme.secondary }}>Achievements</h1>
                     </div>
+                    <br></br>
+                    <br></br>
                     <div className='testimonials--body'>
-                        <FaQuoteLeft
-                            className='quote'
-                            style={{ color: theme.secondary }}
-                        />
-                        <div
-                            className='testimonials--slider'
-                            style={{ backgroundColor: theme.primary }}
-                        >
-                            <Slider {...settings} ref={sliderRef}>
-                                {testimonialsData.map((test) => (
+                        <div className='testimonials--grid'>
+                            {achievementsData.map((achievement) => (
+                                <a
+                                    href={achievement.url}
+                                    key={achievement.id}
+                                    className='single--achievement-link'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >
+                                    {/* Link to individual achievement URL */}
                                     <div
-                                        className='single--testimony'
-                                        key={test.id}
+                                        className='single--achievement'
+                                        style={{ backgroundColor: theme.secondary }}
                                     >
-                                        <div className='testimonials--container'>
-                                            <div
-                                                className='review--img'
-                                                style={{
-                                                    backgroundColor:
-                                                        theme.secondary,
-                                                }}
-                                            >
-                                                <img
-                                                    src={test.image}
-                                                    alt={test.name}
-                                                />
-                                            </div>
-                                            <div
-                                                className='review--content'
-                                                style={{
-                                                    backgroundColor:
-                                                        theme.secondary,
-                                                    color: theme.tertiary,
-                                                }}
-                                            >
-                                                <p>{test.text}</p>
-                                                <h1>{test.name}</h1>
-                                                <h4>{test.title}</h4>
-                                            </div>
+                                        <div className='achievement--image'>
+                                            <img src={achievement.image} height={82} alt={achievement.title} />
+                                        </div>
+                                        <div className='achievement--content' style={{ color: theme.tertiary }}>
+                                            <h2>{achievement.title}</h2>
+                                            <p>{achievement.description}</p>
                                         </div>
                                     </div>
-                                ))}
-                            </Slider>
-                            <button
-                                className='prevBtn'
-                                onClick={gotoPrev}
-                                style={{ backgroundColor: theme.secondary }}
-                            >
-                                <FaArrowLeft
-                                    style={{ color: theme.primary }}
-                                    aria-label='Previous testimonial'
-                                />
-                            </button>
-                            <button
-                                className='nextBtn'
-                                onClick={gotoNext}
-                                style={{ backgroundColor: theme.secondary }}
-                            >
-                                <FaArrowRight
-                                    style={{ color: theme.primary }}
-                                    aria-label='Next testimonial'
-                                />
-                            </button>
+                                </a>
+                            ))}
                         </div>
                     </div>
                 </div>

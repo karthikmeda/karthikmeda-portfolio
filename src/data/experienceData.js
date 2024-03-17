@@ -1,23 +1,26 @@
 export const experienceData = [
     {
         id: 1,
-        company: 'Globex Corporation',
-        jobtitle: 'Frontend Developer',
-        startYear: '2018',
-        endYear: '2019'
+        company: 'AICTE Virtual Internships',
+        jobtitle: 'AWS Cloud Virtual Internship',
+        startYear: 'MAY-2023',
+        endYear: 'JULY-2023',
+        icon : 'https://upload.wikimedia.org/wikipedia/en/e/eb/All_India_Council_for_Technical_Education_logo.png'
     },
     {
         id: 2,
-        company: 'Vehement Capital Partners',
-        jobtitle: 'Backend Developer',
-        startYear: '2019',
-        endYear: '2020'
+        company: 'Smart Bridge',
+        jobtitle: 'Salesforce Administrator Virtual Internship',
+        startYear: '2024',
+        endYear: '2024',
+        icon: 'data:image/png;base64,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'
     },
     {
         id: 3,
-        company: 'Wonka Industries',
-        jobtitle: 'Marketing',
-        startYear: '2020',
-        endYear: 'Present'
+        company: 'TechnoHacks Virtual Internships',
+        jobtitle: 'Web Developer',
+        startYear: '2024',
+        endYear: '2024',
+        icon: 'https://cdn.bio.link/uploads/profile_pictures/2022-07-30/wEG2NHpyi0Mlib5PYIRlSsbzAPDoMtp9.png'
     },
 ]

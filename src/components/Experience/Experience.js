@@ -6,6 +6,8 @@ import './Experience.css';
 
 import { experienceData } from '../../data/experienceData'
 import ExperienceCard from './ExperienceCard';
+import internship from '../../assets/jpeg/internship.jpg'
+
 
 function Experience() {
 
@@ -14,10 +16,10 @@ function Experience() {
         <div className="experience" id="experience" style={{backgroundColor: theme.secondary}}> 
              <div className="experience-body">
                  <div className="experience-image">
-                     <img src={theme.expimg} alt="" />
+                     <img src={internship} alt="" />
                  </div>
                  <div className="experience-description">
-                    <h1 style={{color:theme.primary}}>Experience</h1>
+                    <h1 style={{color:theme.primary}}>Internships</h1>
                     {experienceData.map(exp =>(
                         <ExperienceCard 
                             key={exp.id}
@@ -25,7 +27,9 @@ function Experience() {
                             jobtitle={exp.jobtitle}
                             company={exp.company}
                             startYear={exp.startYear}
-                            endYear={exp.endYear}/>
+                            endYear={exp.endYear}
+                            icon = {exp.icon}
+                            />
                     ))}
                  </div>
              </div>

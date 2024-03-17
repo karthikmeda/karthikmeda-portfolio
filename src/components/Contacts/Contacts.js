@@ -8,6 +8,7 @@ import {
     FaTwitter,
     FaLinkedinIn,
     FaGithub,
+    FaGoogle,
     FaYoutube,
     FaBloggerB,
     FaRedditAlien,
@@ -176,7 +177,7 @@ function Contacts() {
                                     Name
                                 </label>
                                 <input
-                                    placeholder='John Doe'
+                                    placeholder='Meda Karthik'
                                     value={name}
                                     onChange={(e) => setName(e.target.value)}
                                     type='text'
@@ -192,7 +193,7 @@ function Contacts() {
                                     Email
                                 </label>
                                 <input
-                                    placeholder='John@doe.com'
+                                    placeholder='mkarthikmeda@gmail.com'
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                     type='email'
@@ -351,6 +352,16 @@ function Contacts() {
                                     className={classes.socialIcon}
                                 >
                                     <FaInstagram aria-label='Instagram' />
+                                </a>
+                            )}
+                            {socialsData.gmail && (
+                                <a
+                                    href={socialsData.gmail}
+                                    target='_blank'
+                                    rel='noreferrer'
+                                    className={classes.socialIcon}
+                                >
+                                    <FaGoogle aria-label='Gmail' />
                                 </a>
                             )}
                             {socialsData.medium && (

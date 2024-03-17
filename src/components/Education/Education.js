@@ -6,6 +6,7 @@ import './Education.css'
 import EducationCard from './EducationCard';
 
 import { educationData } from '../../data/educationData'
+import education from '../../assets/jpeg/education.jpg'
 
 function Education() {
 
@@ -24,11 +25,13 @@ function Education() {
                             course={edu.course}
                             startYear={edu.startYear}
                             endYear={edu.endYear}
+                            url = {edu.url}
+                            icon = {edu.icon}
                         />
                     ))}
                 </div>
                 <div className="education-image">
-                    <img src={theme.eduimg} alt=""/>
+                    <img src={education}  alt=""/>
                 </div>
             </div>
         </div>
