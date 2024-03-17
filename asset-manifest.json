@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/karthikmeda-portfolio/static/css/main.9895f000.css",
-    "main.js": "/karthikmeda-portfolio/static/js/main.7552daec.js",
+    "main.js": "/karthikmeda-portfolio/static/js/main.96c6cd23.js",
     "static/js/453.1cc257ae.chunk.js": "/karthikmeda-portfolio/static/js/453.1cc257ae.chunk.js",
     "static/media/profileImg.jpg": "/karthikmeda-portfolio/static/media/profileImg.40f99f06dd47e81c9993.jpg",
     "static/media/education.jpg": "/karthikmeda-portfolio/static/media/education.6769f332fc4b4ceb3c90.jpg",
@@ -134,11 +134,11 @@
     "static/media/vuetifyjs.svg": "/karthikmeda-portfolio/static/media/vuetifyjs.3848fcff351a0cbc94e75362594d2b25.svg",
     "static/media/bulma.svg": "/karthikmeda-portfolio/static/media/bulma.12ecb7941234000a2fe38a48cbce30da.svg",
     "main.9895f000.css.map": "/karthikmeda-portfolio/static/css/main.9895f000.css.map",
-    "main.7552daec.js.map": "/karthikmeda-portfolio/static/js/main.7552daec.js.map",
+    "main.96c6cd23.js.map": "/karthikmeda-portfolio/static/js/main.96c6cd23.js.map",
     "453.1cc257ae.chunk.js.map": "/karthikmeda-portfolio/static/js/453.1cc257ae.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9895f000.css",
-    "static/js/main.7552daec.js"
+    "static/js/main.96c6cd23.js"
   ]
 }
