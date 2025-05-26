@@ -24,6 +24,6 @@ export const educationData = [
         startYear: '2022',
         endYear: '2025',
         url : "https://www.kluniversity.in/",
-        icon: "https://pbs.twimg.com/profile_images/964884316563030016/aOT4DBDL_400x400.jpg"
+        icon: "https://scontent.fhyd11-3.fna.fbcdn.net/v/t39.30808-1/279765764_105175182191137_1355349082142300141_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=106&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=3_sLDjcSaicQ7kNvwHn9BsR&_nc_oc=AdnQW5S9Y0y2TOo7nk0l-I8hYGp2Jr2Hdkp2D8a9SfDHnxSGiQMzDd5lPtQ6FsK3dhPIUmi0V9Jn_05yunSZmXJ3&_nc_zt=24&_nc_ht=scontent.fhyd11-3.fna&_nc_gid=167cqetc8AqqPoQOyQwBoA&oh=00_AfLaV7-4tA_ifbQwG-fS1uVUQn8Y3Z-w6A61ZyR-HDoIoA&oe=6838ED6F"
     },
 ]

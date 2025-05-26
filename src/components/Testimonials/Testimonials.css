@@ -1,13 +1,28 @@
 .testimonials {
     font-family: var(--primaryFont);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    justify-content: flex-start;
+    padding: 4rem 0;
+    overflow: visible;
 }
 
+.testimonials--header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.testimonials--header h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
 
 /* SLIDER STYLES */
 .slick-slider {
@@ -34,13 +49,6 @@
 
 }
 
-
-.testimonials--header h1{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 3.5rem;
-    text-align: center;
-}
 
 .testimonials--body {
     display: flex;
@@ -215,21 +223,53 @@
 }
 
 
+.testimonials--grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .single--achievement {
     display: flex;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for a better look */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    height: 250px;
+    width: 100%;
+}
+
+.single--achievement:hover {
+    transform: translateY(-5px);
+}
+
+.achievement--image {
+    flex: 0 0 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    padding: 10px;
 }
 
 .achievement--image img {
-    width: 150px; /* Adjust image width as needed */
-    height: auto;
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .achievement--content {
-    padding: 25px;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .achievement--content h2 {

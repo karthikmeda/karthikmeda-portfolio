@@ -27,6 +27,24 @@ export const achievementData = {
             field : 'Automation',
             url:"https://certificates.automationanywhere.com/8e7f1e7b-c56a-404a-bc91-21b85228d8fa",
             image : 'https://logowik.com/content/uploads/images/automation-anywhere1292.logowik.com.webp'
+        },
+        {
+            id : 4,
+            title : 'GitHub Foundations',
+            details : 'Explore the basics of GitHub, including repositories, branches, and pull requests.',
+            date : '2024',
+            field : 'GitHub',
+            url :"https://www.credly.com/go/dlevsjc3",
+            image : "https://images.credly.com/size/680x680/images/024d0122-724d-4c5a-bd83-cfe3c4b7a073/image.png"
+        },
+        {
+            id : 5,
+            title : 'Wipro TalentNext  Java Full Stack Certification',
+            details : 'Earned a certificate in Java Full Stack Development from Wipro TalentNext',
+            date : '2024',
+            field : 'Java Full Stack',
+            url :"https://cert.diceid.com/cid/FUivq6z3np",
+            image : "https://job4freshers.co.in/wp-content/uploads/2022/04/wipro-1.jpg"
         }
 
     ]

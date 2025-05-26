@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
 import one from '../../assets/jpeg/coding ninjas word cup.jpg'
+import two from '../../assets/jpeg/tcs codevita.png'
 import './Testimonials.css';
 
 function Testimonials() {
@@ -17,13 +18,13 @@ function Testimonials() {
             url: 'https://ampsp.webengage.co/f/a/j0gAogsBxy4xEmTv2jSzsw~~/AAQNhwA~/RgRnSzkIP4QOAmh0dHBzOi8vYy53ZWJlbmdhZ2UuY29tL2x3L2cxLmpwZz9wPWV5SnNZeUk2SW40ME4ySTJOakEyTkNJc0ltd2lPaUpoT0RZME0yWmlOR0l3WTJJNE1URmtZVGMyTjJFMU1qQmhaR1l6WldZd05UVmxNV1UzWkdJMklpd2lZeUk2SWpFM09UYzJNVElpTENKbGJTSTZJbTFyWVhKMGFHbHJiV1ZrWVVCbmJXRnBiQzVqYjIwaUxDSmxJam9pZm5Ga00ySm9NU0lzSW5ZaU9pSiUyQk5tNXJOVFpvTmlJc0luTWlPaUprWmpneU5ESTFZaTB3WXpKakxUUm1aRFF0WVdRNFpTMWhOak5sWlRGbFlXVmlNV0VpTENKcUlqb2lmalk0WlRVMk1HVWlMQ0psZG1WdWRDSTZJbVZ0WVdsc1gyTnNhV05ySWl3aVkzUmhJam9pZmpoaE1qSTJOVEl4SWl3aWRHOVZVa3dpT2lKb2RIUndjem92TDI1cGJtcGhjMlpwYkdWekxuTXpMbUZ0WVhwdmJtRjNjeTVqYjIwdlkyVnlkR2xtYVdOaGRHVmZiMlpmWlhabGJuUmZZMjlrYVc1blgzZHZjbXhrWDJOMWNGOXdiM2RsY21Wa1gySjVYMnh2WjJsMFpXTm9YMk5oWVRabFl6azJPVEppTTJRMFlqVmhNamMyTG5Ca1ppSjlXA3NwY0IKZV8ItGhlYJ-8elIWbWthcnRoaWttZWRhQGdtYWlsLmNvbVgEAAACQQ~~', // Add URL for each achievement
             
         },
-        // {
-        //     id: 2,
-        //     title: 'Achievement 2',
-        //     description: 'Description for Achievement 2',
-        //     image: one,
-        //     url: 'https://example.com/achievement2', // Add URL for each achievement
-        // },
+        {
+            id: 2,
+            title: 'TCS CodeVita Season 12',
+            description: 'I secured a Global Rank of 885 in TCS CodeVita Season 12, competing among 10,000+ participants worldwide. It was a great learning experience that tested my coding and problem-solving skills. Feeling proud and motivated to keep improving!',
+            image: two,
+            // url: 'https://www.tcs.com/codevita', // Add URL for each achievement
+        },
         // Add more achievements as needed
     ];
 

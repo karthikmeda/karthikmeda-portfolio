@@ -14,7 +14,7 @@ export const servicesData = [
         url: 'https://leetcode.com/karthik_39065/' 
     },
     {
-        id: 2,
+        id: 4,
         title: 'CodeChef',
         image : 'https://cdn.dribbble.com/users/70628/screenshots/1743345/codechef.png',
         url: 'https://www.codechef.com/users/karthik_39065' 
@@ -25,11 +25,13 @@ export const servicesData = [
         image : 'https://files.codingninjas.in/article_images/favicon-and-cherrypy-1-1660924366.webp',
         url: 'https://www.codingninjas.com/studio/profile/karthik_39065'
     },
-    // {
-    //     id: 4,
-    //     title: 'Internet Research',
-    //     icon: <FaInternetExplorer />
-    // },
+    {
+        id: 2,
+        title: 'GeeksforGeeks',
+        image : 'https://media.geeksforgeeks.org/gfg-gg-logo.svg',
+        url: 'https://auth.geeksforgeeks.org/user/karthik_39065/practice'
+    },
+    
     // {
     //     id: 5,
     //     title: 'Tutoring',
