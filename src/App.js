@@ -17,8 +17,8 @@ function App() {
   // console.log = console.warn = console.error = () => {};
 
   return (
-    <div className="app">
-      <Router>
+    <div className="app" style={{ backgroundColor: theme.background }}>
+      <Router basename={process.env.PUBLIC_URL}>
         <ScrollToTop/>
         <Switch>
           <Route path="/" exact component={Main} />
